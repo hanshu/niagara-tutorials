@@ -1,2 +1,2 @@
-# niagara-tutorials
-niagara develoment examples
+# niagara-tutoriwals
+niagara development examples
