@@ -1,0 +1,20 @@
+/* Module Build File */
+
+description     = "how to use external native library"
+ext {
+}
+niagaraModule {
+  moduleName = "niagaraDll"
+  preferredSymbol = "nd"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile "Tridium:nre:4.3"
+  compile "Tridium:baja:4.3"
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}

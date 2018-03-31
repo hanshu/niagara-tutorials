@@ -1,0 +1,10 @@
+.gradle
+.idea
+build
+Debug
+ipch
+x64
+*.suo
+*.vcxproj
+*.filters
+*.user
