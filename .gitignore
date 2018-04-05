@@ -4,6 +4,7 @@ build
 Debug
 ipch
 x64
+out
 *.suo
 *.vcxproj
 *.filters

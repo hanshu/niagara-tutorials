@@ -1,0 +1,25 @@
+/* Module Build File */
+
+description     = "How to use embedded databases"
+ext {
+}
+niagaraModule {
+  moduleName = "niagaraDatabase"
+  preferredSymbol = "ndb"
+  runtimeProfile = "rt"
+}
+
+dependencies {
+  compile "Tridium:nre:4.4"
+  compile "Tridium:baja:4.4"
+
+  uberjar "com.h2database:h2:1.4.197"
+  uberjar "org.apache.derby:derby:10.14.1.0"
+  uberjar "org.xerial:sqlite-jdbc:3.21.0.1"
+
+}
+
+moduleTestJar {
+  from('srcTest') {
+  }
+}
