@@ -13,5 +13,8 @@ illustrate these embedded databases usage:
 2. SQLite
 3. Apache Derby
 
-## database
+### database
 sample databases
+
+## niagaraMixin
+>A MixIn is basically a mechanism to automatically add a dynamic slot to a specific type of component within a ComponentSpace.

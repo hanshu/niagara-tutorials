@@ -1,0 +1,12 @@
+<!-- Module Include File -->
+<!-- Types -->
+<types>
+  <!-- Type Example:<type name="MyClass" class="com.acme.BMyClass"/> -->
+  <!--com.tridiumap.niagaraMixin-->
+  <type class="com.tridiumap.niagaraMixin.BHeartbeatMixin" name="HeartbeatMixin">
+    <agent>
+      <on type="niagaraDriver:NiagaraStation"/>
+    </agent>
+  </type>
+  <type class="com.tridiumap.niagaraMixin.BEdgeMonitor" name="EdgeMonitor"/>
+</types>

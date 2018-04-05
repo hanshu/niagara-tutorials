@@ -1,0 +1,21 @@
+/* Module Build File */
+
+description = "How to use Mixin feature"
+ext {
+}
+niagaraModule {
+    moduleName = "niagaraMixin"
+    preferredSymbol = "nm"
+    runtimeProfile = "rt"
+}
+
+dependencies {
+    compile "Tridium:nre:4.4"
+    compile "Tridium:baja:4.4"
+    compile "Tridium:niagaraDriver-rt:4.4"
+}
+
+moduleTestJar {
+    from('srcTest') {
+    }
+}
