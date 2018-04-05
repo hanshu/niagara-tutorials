@@ -30,13 +30,13 @@
         <parameter name="libraries" value="NiagaraLibraries,*"/>
       </parameters>
     </req-permission>
-    <req-permission>
-      <name>RUNTIME_EXECUTION</name>
-      <purposeKey>This module needs it.</purposeKey>
-      <parameters>
-        <parameter name="files" value="*" />
-        <parameter name="actions" value="read,write" />
-      </parameters>
-    </req-permission>
+    <!--<req-permission>-->
+      <!--<name>RUNTIME_EXECUTION</name>-->
+      <!--<purposeKey>This module needs it.</purposeKey>-->
+      <!--<parameters>-->
+        <!--<parameter name="files" value="*" />-->
+        <!--<parameter name="actions" value="read,write" />-->
+      <!--</parameters>-->
+    <!--</req-permission>-->
   </niagara-permission-groups>
 </permissions>

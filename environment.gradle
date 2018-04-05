@@ -4,5 +4,5 @@
 // 
 // Its contents are auto-generated and your changes may be erased
 gradle.ext.niagara_dev_home = "C:/Examples/niagara/n4"
-gradle.ext.niagara_home = "C:/Niagara/Niagara-4.3.58.18"
-gradle.ext.niagara_user_home = "C:/Users/e523193/Niagara4.3/vykon"
+gradle.ext.niagara_home = "C:/Niagara/Niagara-4.4.73.24"
+gradle.ext.niagara_user_home = "C:/Users/e523193/Niagara4.4/tridium"

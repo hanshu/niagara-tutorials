@@ -10,8 +10,8 @@ niagaraModule {
 }
 
 dependencies {
-  compile "Tridium:nre:4.3"
-  compile "Tridium:baja:4.3"
+  compile "Tridium:nre:4.4"
+  compile "Tridium:baja:4.4"
 }
 
 moduleTestJar {
