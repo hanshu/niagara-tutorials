@@ -1,7 +1,6 @@
 package com.tridiumap.niagaraDatabase.derby;
 
 import com.tridiumap.niagaraDatabase.BBaseComponent;
-import java.io.File;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
 import java.sql.Connection;
@@ -10,18 +9,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.logging.Logger;
-import javax.baja.nre.annotations.Facet;
-import javax.baja.nre.annotations.NiagaraAction;
-import javax.baja.nre.annotations.NiagaraProperty;
 import javax.baja.nre.annotations.NiagaraType;
-import javax.baja.sys.Action;
-import javax.baja.sys.BComponent;
-import javax.baja.sys.BFacets;
-import javax.baja.sys.Flags;
-import javax.baja.sys.Property;
 import javax.baja.sys.Sys;
 import javax.baja.sys.Type;
-import org.apache.derby.jdbc.AutoloadedDriver;
 import org.apache.derby.jdbc.EmbeddedDriver;
 
 @NiagaraType

@@ -1,21 +1,17 @@
 package com.tridiumap.niagaraDatabase.h2;
 
 import com.tridiumap.niagaraDatabase.BBaseComponent;
-import java.util.logging.Logger;
-import javax.baja.nre.annotations.Facet;
-import org.h2.jdbcx.JdbcConnectionPool;
-
-import javax.baja.naming.BOrd;
-import javax.baja.nre.annotations.NiagaraAction;
-import javax.baja.nre.annotations.NiagaraProperty;
-import javax.baja.nre.annotations.NiagaraType;
-import javax.baja.sys.*;
 import java.io.File;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.logging.Logger;
+import javax.baja.nre.annotations.NiagaraType;
+import javax.baja.sys.Sys;
+import javax.baja.sys.Type;
+import org.h2.jdbcx.JdbcConnectionPool;
 
 @NiagaraType
 public class BH2Invoker extends BBaseComponent {
