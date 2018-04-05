@@ -3,7 +3,7 @@ niagara development examples
 
 ## native libraries
 - NiagaraLibraries
-c++ native library proiect
+c++ native library project
 - niagaraDll
 how to use the above native library
 
