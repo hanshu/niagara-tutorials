@@ -9,9 +9,9 @@ how to use the above native library
 
 ## niagaraDatabase
 illustrate these embedded databases usage:
-1 H2
-2 SQLite
-3 Apache Derby
+1, H2
+2, SQLite
+3, Apache Derby
 
 ## database
 sample databases
