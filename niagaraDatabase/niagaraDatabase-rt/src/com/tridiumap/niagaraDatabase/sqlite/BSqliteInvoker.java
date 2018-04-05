@@ -26,32 +26,26 @@ import org.sqlite.JDBC;
 
 @NiagaraType
 public class BSqliteInvoker extends BBaseComponent {
-  
-/*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-/*@ $com.tridiumap.niagaraDatabase.sqlite.BSqliteInvoker(2979906276)1.0$ @*/
-/* Generated Thu Apr 05 17:28:08 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
+
+  /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
+  /*@ $com.tridiumap.niagaraDatabase.sqlite.BSqliteInvoker(2979906276)1.0$ @*/
+  /* Generated Thu Apr 05 17:28:08 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Type
 ////////////////////////////////////////////////////////////////
-  
-  @Override
-  public Type getType() { return TYPE; }
-  public static final Type TYPE = Sys.loadType(BSqliteInvoker.class);
-
-/*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-  private static final Logger LOG = Logger.getLogger("tutorial.sqlite");
 
   @Override
-  public void started() throws Exception {
-    super.started();
-
-    File shareHome = Sys.getStationHome();
-    setStationShareHome(shareHome.getAbsolutePath());
-    LOG.fine("niagara home: " + Sys.getNiagaraHome().getAbsolutePath());
+  public Type getType() {
+    return TYPE;
   }
 
-  public void doExecute() {
+  public static final Type TYPE = Sys.loadType(BSqliteInvoker.class);
+
+  /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
+  private static final Logger LOG = Logger.getLogger("tutorial.sqlite");
+
+  protected void onExecute() {
 
     AccessController.doPrivileged((PrivilegedAction<Void>) () -> {
       System.setProperty("org.sqlite.tmpdir", getStationShareHome());

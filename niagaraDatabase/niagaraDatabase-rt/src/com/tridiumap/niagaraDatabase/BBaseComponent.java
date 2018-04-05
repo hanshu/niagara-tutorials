@@ -21,7 +21,7 @@ import javax.baja.sys.Type;
     | Flags.READONLY)
 @NiagaraProperty(name = "stationShareHome", type = "String", defaultValue = "", flags = Flags.READONLY)
 @NiagaraAction(name = "execute")
-public class BBaseComponent extends BComponent {
+public abstract class BBaseComponent extends BComponent {
 /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
 /*@ $com.tridiumap.niagaraDatabase.BBaseComponent(1637556178)1.0$ @*/
 /* Generated Thu Apr 05 17:24:54 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
@@ -128,5 +128,10 @@ public class BBaseComponent extends BComponent {
 
     File shareHome = Sys.getStationHome();
     setStationShareHome(shareHome.getAbsolutePath());
+  }
+
+  protected abstract void onExecute();
+  public void doExecute() {
+    onExecute();
   }
 }

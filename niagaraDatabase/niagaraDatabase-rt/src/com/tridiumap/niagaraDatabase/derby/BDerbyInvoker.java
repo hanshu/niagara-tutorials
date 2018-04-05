@@ -46,7 +46,7 @@ public class BDerbyInvoker extends BBaseComponent {
   /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
   private static final Logger LOG = Logger.getLogger("tutorial.derby");
 
-  public void doExecute() {
+  protected void onExecute() {
     Connection connection = null;
     String url = "jdbc:derby:testdb;user=USER12";
 

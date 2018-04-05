@@ -37,9 +37,9 @@ public class BH2Invoker extends BBaseComponent {
   public static final Type TYPE = Sys.loadType(BH2Invoker.class);
 
   /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
-  private static final Logger LOG = Logger.getLogger("tutorial.h2");
+  private static final Logger LOG = Logger.getLogger("tutorial.h2db");
 
-  public void doExecute() {
+  protected void onExecute() {
     String result = "";
 //    String dbUrl = "file:^h2db";
 //    BOrd h2Db = BOrd.make(dbUrl);
