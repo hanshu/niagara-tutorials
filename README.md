@@ -1,4 +1,4 @@
-# niagara-tutoriwals
+# niagara-tutorials
 niagara development examples
 
 ## native libraries
