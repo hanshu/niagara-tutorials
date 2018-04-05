@@ -8,4 +8,6 @@
   <type class="com.tridiumap.niagaraDatabase.derby.BDerbyInvoker" name="DerbyInvoker"/>
   <!--com.tridiumap.niagaraDatabase.sqlite-->
   <type class="com.tridiumap.niagaraDatabase.sqlite.BSqliteInvoker" name="SqliteInvoker"/>
+  <!--com.tridiumap.niagaraDatabase-->
+  <type class="com.tridiumap.niagaraDatabase.BBaseComponent" name="BaseComponent"/>
 </types>

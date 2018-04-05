@@ -1,5 +1,6 @@
 package com.tridiumap.niagaraDatabase.derby;
 
+import com.tridiumap.niagaraDatabase.BBaseComponent;
 import java.io.File;
 import java.security.AccessController;
 import java.security.PrivilegedAction;
@@ -24,129 +25,12 @@ import org.apache.derby.jdbc.AutoloadedDriver;
 import org.apache.derby.jdbc.EmbeddedDriver;
 
 @NiagaraType
-@NiagaraProperty(name = "result", type = "String", defaultValue = "",
-    facets = {@Facet("BFacets.make(BFacets.MULTI_LINE,true)")}, flags = Flags.TRANSIENT
-)
-@NiagaraProperty(name = "faultCause", type = "String", defaultValue = "", flags = Flags.TRANSIENT
-    | Flags.READONLY)
-@NiagaraProperty(name = "stationShareHome", type = "String", defaultValue = "", flags = Flags.READONLY)
-@NiagaraAction(name = "execute")
-public class BDerbyInvoker extends BComponent {
+public class BDerbyInvoker extends BBaseComponent {
+
 
   /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-  /*@ $com.tridiumap.niagaraDerby.BDerbyInvoker(1637556178)1.0$ @*/
-  /* Generated Thu Apr 05 09:25:32 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
-
-////////////////////////////////////////////////////////////////
-// Property "result"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code result} property.
-   *
-   * @see #getResult
-   * @see #setResult
-   */
-  public static final Property result = newProperty(Flags.TRANSIENT, "",
-      BFacets.make(BFacets.MULTI_LINE, true));
-
-  /**
-   * Get the {@code result} property.
-   *
-   * @see #result
-   */
-  public String getResult() {
-    return getString(result);
-  }
-
-  /**
-   * Set the {@code result} property.
-   *
-   * @see #result
-   */
-  public void setResult(String v) {
-    setString(result, v, null);
-  }
-
-////////////////////////////////////////////////////////////////
-// Property "faultCause"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code faultCause} property.
-   *
-   * @see #getFaultCause
-   * @see #setFaultCause
-   */
-  public static final Property faultCause = newProperty(Flags.TRANSIENT | Flags.READONLY, "", null);
-
-  /**
-   * Get the {@code faultCause} property.
-   *
-   * @see #faultCause
-   */
-  public String getFaultCause() {
-    return getString(faultCause);
-  }
-
-  /**
-   * Set the {@code faultCause} property.
-   *
-   * @see #faultCause
-   */
-  public void setFaultCause(String v) {
-    setString(faultCause, v, null);
-  }
-
-////////////////////////////////////////////////////////////////
-// Property "stationShareHome"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code stationShareHome} property.
-   *
-   * @see #getStationShareHome
-   * @see #setStationShareHome
-   */
-  public static final Property stationShareHome = newProperty(Flags.READONLY, "", null);
-
-  /**
-   * Get the {@code stationShareHome} property.
-   *
-   * @see #stationShareHome
-   */
-  public String getStationShareHome() {
-    return getString(stationShareHome);
-  }
-
-  /**
-   * Set the {@code stationShareHome} property.
-   *
-   * @see #stationShareHome
-   */
-  public void setStationShareHome(String v) {
-    setString(stationShareHome, v, null);
-  }
-
-////////////////////////////////////////////////////////////////
-// Action "execute"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code execute} action.
-   *
-   * @see #execute()
-   */
-  public static final Action execute = newAction(0, null);
-
-  /**
-   * Invoke the {@code execute} action.
-   *
-   * @see #execute
-   */
-  public void execute() {
-    invoke(execute, null, null);
-  }
+  /*@ $com.tridiumap.niagaraDatabase.derby.BDerbyInvoker(2979906276)1.0$ @*/
+  /* Generated Thu Apr 05 17:26:54 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Type
@@ -161,14 +45,6 @@ public class BDerbyInvoker extends BComponent {
 
   /*+ ------------ END BAJA AUTO GENERATED CODE -------------- +*/
   private static final Logger LOG = Logger.getLogger("tutorial.derby");
-
-  @Override
-  public void started() throws Exception {
-    super.started();
-
-    File shareHome = Sys.getStationHome();
-    setStationShareHome(shareHome.getAbsolutePath());
-  }
 
   public void doExecute() {
     Connection connection = null;

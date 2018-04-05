@@ -1,5 +1,6 @@
 package com.tridiumap.niagaraDatabase.h2;
 
+import com.tridiumap.niagaraDatabase.BBaseComponent;
 import java.util.logging.Logger;
 import javax.baja.nre.annotations.Facet;
 import org.h2.jdbcx.JdbcConnectionPool;
@@ -17,66 +18,12 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 @NiagaraType
-@NiagaraProperty(name = "result", type = "String", defaultValue = "",
-    facets = {@Facet("BFacets.make(BFacets.MULTI_LINE,true)")}, flags = Flags.TRANSIENT
-)
-@NiagaraAction(name = "execute")
-public class BH2Invoker extends BComponent {
+public class BH2Invoker extends BBaseComponent {
+
 
   /*+ ------------ BEGIN BAJA AUTO GENERATED CODE ------------ +*/
-  /*@ $com.tridiumap.niagaraDatabase.h2.BH2Invoker(1693166137)1.0$ @*/
-  /* Generated Thu Apr 05 15:37:02 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
-
-////////////////////////////////////////////////////////////////
-// Property "result"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code result} property.
-   *
-   * @see #getResult
-   * @see #setResult
-   */
-  public static final Property result = newProperty(Flags.TRANSIENT, "",
-      BFacets.make(BFacets.MULTI_LINE, true));
-
-  /**
-   * Get the {@code result} property.
-   *
-   * @see #result
-   */
-  public String getResult() {
-    return getString(result);
-  }
-
-  /**
-   * Set the {@code result} property.
-   *
-   * @see #result
-   */
-  public void setResult(String v) {
-    setString(result, v, null);
-  }
-
-////////////////////////////////////////////////////////////////
-// Action "execute"
-////////////////////////////////////////////////////////////////
-
-  /**
-   * Slot for the {@code execute} action.
-   *
-   * @see #execute()
-   */
-  public static final Action execute = newAction(0, null);
-
-  /**
-   * Invoke the {@code execute} action.
-   *
-   * @see #execute
-   */
-  public void execute() {
-    invoke(execute, null, null);
-  }
+  /*@ $com.tridiumap.niagaraDatabase.h2.BH2Invoker(2979906276)1.0$ @*/
+  /* Generated Thu Apr 05 17:28:08 CST 2018 by Slot-o-Matic (c) Tridium, Inc. 2012 */
 
 ////////////////////////////////////////////////////////////////
 // Type
@@ -94,10 +41,8 @@ public class BH2Invoker extends BComponent {
 
   public void doExecute() {
     String result = "";
-
-    String dbUrl = "file:^h2db";
-    BOrd h2Db = BOrd.make(dbUrl);
-
+//    String dbUrl = "file:^h2db";
+//    BOrd h2Db = BOrd.make(dbUrl);
 //        BIFile file = (BIFile)h2Db.get();
 //        FilePath filePath = file.getFilePath();
 //        File localFile = BFileSystem.INSTANCE.pathToLocalFile(filePath);
