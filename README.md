@@ -2,9 +2,9 @@
 niagara development examples
 
 ## native libraries
-- NiagaraLibraries
+- NiagaraLibraries  
 c++ native library project
-- niagaraDll
+- niagaraDll  
 how to use the above native library
 
 ## niagaraDatabase
@@ -15,9 +15,9 @@ illustrate these embedded databases usage:
 
 ### database
 sample databases are required to put under niagara station shares folder:
-1. Derby
+1. Derby  
 derby.system.home system property can be used to configure derby default working directory; and also derby library is put to [niagara home]/jre/lib/ext directory due to niagara security manager configuration.
-2. SQLite
+2. SQLite  
 org.sqlite.lib.path system property configures the native SLite library path, org.sqlite.lib.name configures the native library name;
 
 ## niagaraMixin
